@@ -1,13 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 :root{
-    --primary-color: #60EFFF;
-    --seconday-color: #0061FF;
+    --primary-color: #0A1045;
+    --seconday-color: #ED33B9;
 }
 
 body{
-    font-family: 'Coming Soon',
-    cursive;
-    background-color: var(--seconday-color);
-    color: var(--primary-color);
+    font-family: 'Merriweather',
+    serif;
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+}
+
+.container{
+
+    margin: auto;
+    max-width: 600px;
+}
+
+h1,p{
+    text-align: center;
+}
+p{
+    font-weight: bold;
+}
+input,label{
+    
+  
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+
+}
+input{
+    margin: 1rem auto;
+    max-width: fit-content;
+    padding: 0.5rem 0.5rem;
+}
+
+#check-button {
+    display: block;
+    
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+    font-weight: bold;
+    font-size: 1rem;
+    border-color: var(--seconday-color);
+    border-radius: 0.5rem;
+    margin: auto;
 }

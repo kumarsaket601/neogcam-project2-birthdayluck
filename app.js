@@ -3,6 +3,7 @@ var luckNumber = document.querySelector("#luck-number");
 var checkButton = document.querySelector("#check-button");
 var output = document.querySelector(".message");
 var log = console.log;
+var image = document.querySelector("#birthday-celebration");
 
 
 function compareSumAndLucky(total,luckNumber){
@@ -10,7 +11,7 @@ function compareSumAndLucky(total,luckNumber){
     if(total%luckNumber === 0){
 
        output.innerText = "Your Birthday Number is lucky";
-
+          
     }
     else{
         output.innerText = "Sorry your Birthday Number is  not lucky";
