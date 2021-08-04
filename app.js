@@ -10,11 +10,11 @@ function compareSumAndLucky(total,luckNumber){
 
     if(total%luckNumber === 0){
 
-       output.innerText = "Your Birthday Number is lucky";
+       output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
           
     }
     else{
-        output.innerText = "Sorry your Birthday Number is  not lucky";
+        output.innerText = "Sorry your Birth Date is not lucky";
     }
    
 }
