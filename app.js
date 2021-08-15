@@ -6,18 +6,7 @@ var log = console.log;
 
 
 
-function compareSumAndLucky(total,luckNumber){
 
-    if(total%luckNumber === 0){
-
-       output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
-          
-    }
-    else{
-        output.innerText = "Sorry your Birth Date is not lucky";
-    }
-   
-}
 
 function sumOfBirthday(born){
 
@@ -40,8 +29,15 @@ function birthdayButtonHandler() {
     var born = dateOfBirth.value;
     var born = born.replaceAll("-","");
     var total = sumOfBirthday(born);
-    compareSumAndLucky(total,luckNumber.value)
-   
+  
+    if(total % Number(luckNumber.value) === 0){
 
-};
+       output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
+          
+    }
+    else{
+        output.innerText = "Sorry your Birth Date is not lucky";
+    }
+
+}
 checkButton.addEventListener('click', birthdayButtonHandler)
