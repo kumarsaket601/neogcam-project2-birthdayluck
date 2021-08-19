@@ -36,7 +36,7 @@ function birthdayButtonHandler() {
           
     }
     else{
-        output.innerText = "Sorry your Birth Date is not lucky";
+        output.innerText = "Sorry your Birth Date is not lucky😔😟😢";
     }
 
 }

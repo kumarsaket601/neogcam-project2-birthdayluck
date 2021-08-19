@@ -22,7 +22,9 @@ h1,p{
     text-align: center;
 }
 p{
+    background-color: ivory;
     font-weight: bold;
+    padding: 1rem;
 }
 input,label{
     
@@ -34,6 +36,7 @@ input,label{
 
 }
 input{
+    border-radius: 0.5rem;
     margin: 1rem auto;
     max-width: fit-content;
     padding: 0.5rem 0.5rem;
