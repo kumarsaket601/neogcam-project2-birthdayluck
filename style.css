@@ -66,16 +66,19 @@ input{
 
 
 .footer {
+    
     background-color: var(--primary-color);
     padding: 4rem 1rem;
     text-align: center;
     color: white;
     margin-top: 5rem;
+    
 
 }
 
 .footer .link {
     color: white;
+    
 }
 
 .footer ul {
