@@ -8,36 +8,42 @@ var log = console.log;
 
 
 
-function sumOfBirthday(born){
+function sumOfBirthday(born) {
 
     var sum = 0;
 
-    for(var postion=0; postion < born.length; postion++){
-          sum = sum + Number(born.charAt(postion));
+    for (var postion = 0; postion < born.length; postion++) {
+        sum = sum + Number(born.charAt(postion));
 
-         
-        
+
+
     }
     return sum;
-  
- 
-     
+
+
+
 }
 
 function birthdayButtonHandler() {
-  
-    var born = dateOfBirth.value;
-    var born = born.replaceAll("-","");
-    var total = sumOfBirthday(born);
-  
-    if(total % Number(luckNumber.value) === 0){
 
-       output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
-          
+    var born = dateOfBirth.value;
+    var born = born.replaceAll("-", "");
+    var total = sumOfBirthday(born);
+
+    if (Number(luckNumber.value) >= 0 && born != "") {
+        if (total % Number(luckNumber.value) === 0) {
+
+            output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
+
+        } else {
+            output.innerText = "Sorry your Birth Date is not lucky😔😟😢";
+        }
+    } else {
+
+        output.innerText = "Please provide the positive value of lucky  no.";
     }
-    else{
-        output.innerText = "Sorry your Birth Date is not lucky😔😟😢";
-    }
+
+
 
 }
 checkButton.addEventListener('click', birthdayButtonHandler)
