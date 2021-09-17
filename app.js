@@ -30,18 +30,24 @@ function birthdayButtonHandler() {
     var born = born.replaceAll("-", "");
     var total = sumOfBirthday(born);
 
-    if (Number(luckNumber.value) >= 0 && born != "") {
-        if (total % Number(luckNumber.value) === 0) {
+    if (born !== '' && luckNumber.value !== '') {
+        if (Number(luckNumber.value) > 0) {
+            if (total % Number(luckNumber.value) === 0) {
 
-            output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
+                output.innerText = "Your Birth Date is lucky 🎈🧨✨🎉🎊";
 
+            } else {
+                output.innerText = "Sorry your Birth Date is not lucky😔😟😢";
+            }
         } else {
-            output.innerText = "Sorry your Birth Date is not lucky😔😟😢";
-        }
-    } else {
 
-        output.innerText = "Please provide the positive value of lucky  no.";
+            output.innerText = "Please provide the positive value of lucky  no.";
+        }
+
+    } else{
+        output.innerText = "Please input some value";
     }
+
 
 
 
